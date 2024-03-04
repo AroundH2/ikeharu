@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script>
+$(document).bind("bobileinit", function() {
+    $.mobile.page.prototype.options.addBackBtn = true;
+});
+</script>
+</head>
+<body>
+<div data-role="page" id="id1">
+  <div data-role="header" data-add-back-btn="true">
+    <h1>test page 1</h1>
+  </div>
+  <div role="main" class="ui-content">
+    test page 1
+    <a href="#id2">go to page2</a>
+  </div>
+</div>
+
+<div data-role="page" id="id2">
+  <div data-role="header" data-add-back-btn="true">
+    <h1>test page 2</h1>
+  </div>
+  <div role="main" class="ui-content">
+    test page2
+  </div>
+</div>
+</body>
+</html>
