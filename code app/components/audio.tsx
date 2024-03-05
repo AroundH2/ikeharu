@@ -1,5 +1,5 @@
 interface Props {
-  codename:string
+  codeurl:string
 }
 
 export const Audio = (props:Props) => {
